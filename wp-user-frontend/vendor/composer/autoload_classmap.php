@@ -193,6 +193,7 @@ return array(
     'WeDevs\\Wpuf\\Frontend\\Shortcode' => $baseDir . '/includes/Frontend/Shortcode.php',
     'WeDevs\\Wpuf\\Frontend_Render_Form' => $baseDir . '/includes/Frontend_Render_Form.php',
     'WeDevs\\Wpuf\\Installer' => $baseDir . '/includes/Installer.php',
+    'WeDevs\\Wpuf\\Integrations' => $baseDir . '/includes/Integrations.php',
     'WeDevs\\Wpuf\\Integrations\\WPUF_ACF_Compatibility' => $baseDir . '/includes/Integrations/WPUF_ACF_Compatibility.php',
     'WeDevs\\Wpuf\\Integrations\\WPUF_Dokan_Integration' => $baseDir . '/includes/Integrations/WPUF_Dokan_Integration.php',
     'WeDevs\\Wpuf\\Integrations\\WPUF_WCMp_Integration' => $baseDir . '/includes/Integrations/WPUF_WCMp_Integration.php',

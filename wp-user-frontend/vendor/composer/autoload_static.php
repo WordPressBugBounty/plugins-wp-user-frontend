@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd45382ff60ee79f90668e944e165456b
+class ComposerStaticInit2e70685189301b034a1c26a2e9e874af
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -226,6 +226,7 @@ class ComposerStaticInitd45382ff60ee79f90668e944e165456b
         'WeDevs\\Wpuf\\Frontend\\Shortcode' => __DIR__ . '/../..' . '/includes/Frontend/Shortcode.php',
         'WeDevs\\Wpuf\\Frontend_Render_Form' => __DIR__ . '/../..' . '/includes/Frontend_Render_Form.php',
         'WeDevs\\Wpuf\\Installer' => __DIR__ . '/../..' . '/includes/Installer.php',
+        'WeDevs\\Wpuf\\Integrations' => __DIR__ . '/../..' . '/includes/Integrations.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_ACF_Compatibility' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_ACF_Compatibility.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_Dokan_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_Dokan_Integration.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_WCMp_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_WCMp_Integration.php',
@@ -251,9 +252,9 @@ class ComposerStaticInitd45382ff60ee79f90668e944e165456b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd45382ff60ee79f90668e944e165456b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd45382ff60ee79f90668e944e165456b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitd45382ff60ee79f90668e944e165456b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2e70685189301b034a1c26a2e9e874af::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2e70685189301b034a1c26a2e9e874af::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2e70685189301b034a1c26a2e9e874af::$classMap;
 
         }, null, ClassLoader::class);
     }
