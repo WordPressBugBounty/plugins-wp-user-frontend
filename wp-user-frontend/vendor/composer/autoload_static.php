@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2e70685189301b034a1c26a2e9e874af
+class ComposerStaticInitcc4843454f7436c206450dfef6bd94dc
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -185,6 +185,7 @@ class ComposerStaticInit2e70685189301b034a1c26a2e9e874af
         'WeDevs\\Wpuf\\Encryption_Helper' => __DIR__ . '/../..' . '/includes/Encryption_Helper.php',
         'WeDevs\\Wpuf\\Fields\\Field_Contract' => __DIR__ . '/../..' . '/includes/Fields/Field_Contract.php',
         'WeDevs\\Wpuf\\Fields\\Form_Field_Checkbox' => __DIR__ . '/../..' . '/includes/Fields/Form_Field_Checkbox.php',
+        'WeDevs\\Wpuf\\Fields\\Form_Field_Cloudflare_Turnstile' => __DIR__ . '/../..' . '/includes/Fields/Form_Field_Cloudflare_Turnstile.php',
         'WeDevs\\Wpuf\\Fields\\Form_Field_Column' => __DIR__ . '/../..' . '/includes/Fields/Form_Field_Column.php',
         'WeDevs\\Wpuf\\Fields\\Form_Field_Dropdown' => __DIR__ . '/../..' . '/includes/Fields/Form_Field_Dropdown.php',
         'WeDevs\\Wpuf\\Fields\\Form_Field_Email' => __DIR__ . '/../..' . '/includes/Fields/Form_Field_Email.php',
@@ -252,9 +253,9 @@ class ComposerStaticInit2e70685189301b034a1c26a2e9e874af
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2e70685189301b034a1c26a2e9e874af::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2e70685189301b034a1c26a2e9e874af::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit2e70685189301b034a1c26a2e9e874af::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcc4843454f7436c206450dfef6bd94dc::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcc4843454f7436c206450dfef6bd94dc::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitcc4843454f7436c206450dfef6bd94dc::$classMap;
 
         }, null, ClassLoader::class);
     }
