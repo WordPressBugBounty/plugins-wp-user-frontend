@@ -18,7 +18,7 @@
             'aliases' => array(
                 0 => '2.x-dev',
             ),
-            'reference' => '2a9170263fcd9cc4fd0b50917293c21d6c1a5bfe',
+            'reference' => '5b390889ecbb17bfa69ed5a030fa2e6075a19ba0',
             'dev_requirement' => false,
         ),
         'wedevs/wp-user-frontend' => array(
