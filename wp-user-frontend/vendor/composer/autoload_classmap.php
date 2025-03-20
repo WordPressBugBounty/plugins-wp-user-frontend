@@ -164,7 +164,6 @@ return array(
     'WeDevs\\Wpuf\\Fields\\Form_Field_Hidden' => $baseDir . '/includes/Fields/Form_Field_Hidden.php',
     'WeDevs\\Wpuf\\Fields\\Form_Field_Image' => $baseDir . '/includes/Fields/Form_Field_Image.php',
     'WeDevs\\Wpuf\\Fields\\Form_Field_MultiDropdown' => $baseDir . '/includes/Fields/Form_Field_MultiDropdown.php',
-    'WeDevs\\Wpuf\\Fields\\Form_Field_Numeric' => $baseDir . '/includes/Fields/Form_Field_Numeric.php',
     'WeDevs\\Wpuf\\Fields\\Form_Field_Post_Content' => $baseDir . '/includes/Fields/Form_Field_Post_Content.php',
     'WeDevs\\Wpuf\\Fields\\Form_Field_Post_Excerpt' => $baseDir . '/includes/Fields/Form_Field_Post_Excerpt.php',
     'WeDevs\\Wpuf\\Fields\\Form_Field_Post_Tags' => $baseDir . '/includes/Fields/Form_Field_Post_Tags.php',
