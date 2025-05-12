@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitcf9131c8b443b34036334acd80493acc
+class ComposerStaticInit1ea5bad764a9c5cb580d443bc24fb5df
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -162,7 +162,6 @@ class ComposerStaticInitcf9131c8b443b34036334acd80493acc
         'WeDevs\\Wpuf\\Admin\\Forms\\Form_Manager' => __DIR__ . '/../..' . '/includes/Admin/Forms/Form_Manager.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Form_Template' => __DIR__ . '/../..' . '/includes/Admin/Forms/Form_Template.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Form_Template' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Form_Template.php',
-        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\List_Table_Admin_Post_Forms' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/List_Table_Admin_Post_Forms.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Events_Calendar' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Events_Calendar.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Post' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Post.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_WooCommerce' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_WooCommerce.php',
@@ -182,6 +181,7 @@ class ComposerStaticInitcf9131c8b443b34036334acd80493acc
         'WeDevs\\Wpuf\\Ajax\\Admin_Form_Builder_Ajax' => __DIR__ . '/../..' . '/includes/Ajax/Admin_Form_Builder_Ajax.php',
         'WeDevs\\Wpuf\\Ajax\\Frontend_Form_Ajax' => __DIR__ . '/../..' . '/includes/Ajax/Frontend_Form_Ajax.php',
         'WeDevs\\Wpuf\\Ajax\\Upload_Ajax' => __DIR__ . '/../..' . '/includes/Ajax/Upload_Ajax.php',
+        'WeDevs\\Wpuf\\Api\\FormList' => __DIR__ . '/../..' . '/includes/Api/FormList.php',
         'WeDevs\\Wpuf\\Api\\Subscription' => __DIR__ . '/../..' . '/includes/Api/Subscription.php',
         'WeDevs\\Wpuf\\Assets' => __DIR__ . '/../..' . '/includes/Assets.php',
         'WeDevs\\Wpuf\\Data\\Country_State' => __DIR__ . '/../..' . '/includes/Data/Country_State.php',
@@ -255,9 +255,9 @@ class ComposerStaticInitcf9131c8b443b34036334acd80493acc
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitcf9131c8b443b34036334acd80493acc::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitcf9131c8b443b34036334acd80493acc::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitcf9131c8b443b34036334acd80493acc::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1ea5bad764a9c5cb580d443bc24fb5df::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1ea5bad764a9c5cb580d443bc24fb5df::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1ea5bad764a9c5cb580d443bc24fb5df::$classMap;
 
         }, null, ClassLoader::class);
     }
