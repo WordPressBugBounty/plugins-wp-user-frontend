@@ -195,6 +195,7 @@ return array(
     'WeDevs\\Wpuf\\Frontend\\Registration' => $baseDir . '/includes/Frontend/Registration.php',
     'WeDevs\\Wpuf\\Frontend\\Shortcode' => $baseDir . '/includes/Frontend/Shortcode.php',
     'WeDevs\\Wpuf\\Frontend_Render_Form' => $baseDir . '/includes/Frontend_Render_Form.php',
+    'WeDevs\\Wpuf\\Hooks\\Form_Settings_Cleanup' => $baseDir . '/includes/Hooks/Form_Settings_Cleanup.php',
     'WeDevs\\Wpuf\\Installer' => $baseDir . '/includes/Installer.php',
     'WeDevs\\Wpuf\\Integrations' => $baseDir . '/includes/Integrations.php',
     'WeDevs\\Wpuf\\Integrations\\WPUF_ACF_Compatibility' => $baseDir . '/includes/Integrations/WPUF_ACF_Compatibility.php',
