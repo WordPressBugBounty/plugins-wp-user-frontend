@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc8817ae5362dbd999087e122782910ec
+class ComposerStaticInit27bf5aa443b41ef4d7ae4b00dcb57fd3
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -162,7 +162,6 @@ class ComposerStaticInitc8817ae5362dbd999087e122782910ec
         'WeDevs\\Wpuf\\Admin\\Forms\\Form_Manager' => __DIR__ . '/../..' . '/includes/Admin/Forms/Form_Manager.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Form_Template' => __DIR__ . '/../..' . '/includes/Admin/Forms/Form_Template.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Form_Template' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Form_Template.php',
-        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Events_Calendar' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Events_Calendar.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Post' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Post.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_WooCommerce' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_WooCommerce.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_EDD' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_EDD.php',
@@ -231,6 +230,17 @@ class ComposerStaticInitc8817ae5362dbd999087e122782910ec
         'WeDevs\\Wpuf\\Hooks\\Form_Settings_Cleanup' => __DIR__ . '/../..' . '/includes/Hooks/Form_Settings_Cleanup.php',
         'WeDevs\\Wpuf\\Installer' => __DIR__ . '/../..' . '/includes/Installer.php',
         'WeDevs\\Wpuf\\Integrations' => __DIR__ . '/../..' . '/includes/Integrations.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Compatibility\\TEC_Compatibility_Manager' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Compatibility/TEC_Compatibility_Manager.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Compatibility\\TEC_V5_Compatibility' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Compatibility/TEC_V5_Compatibility.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Compatibility\\TEC_V6_Compatibility' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Compatibility/TEC_V6_Compatibility.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Events_Calendar_Integration' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Events_Calendar_Integration.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Handlers\\Event_Handler' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Handlers/Event_Handler.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Templates\\Event_Form_Template' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Templates/Event_Form_Template.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Utils\\Events_Calendar_Context' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Utils/Events_Calendar_Context.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Utils\\TEC_Constants' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Utils/TEC_Constants.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Validators\\Date_Validator' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Validators/Date_Validator.php',
+        'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Validators\\Event_Validator' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Validators/Event_Validator.php',
+        'WeDevs\\Wpuf\\Integrations\\TEC_Venue_Organizer_Fix' => __DIR__ . '/../..' . '/includes/Integrations/TEC_Venue_Organizer_Fix.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_ACF_Compatibility' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_ACF_Compatibility.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_Dokan_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_Dokan_Integration.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_WCMp_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_WCMp_Integration.php',
@@ -256,9 +266,9 @@ class ComposerStaticInitc8817ae5362dbd999087e122782910ec
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc8817ae5362dbd999087e122782910ec::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc8817ae5362dbd999087e122782910ec::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc8817ae5362dbd999087e122782910ec::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit27bf5aa443b41ef4d7ae4b00dcb57fd3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit27bf5aa443b41ef4d7ae4b00dcb57fd3::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit27bf5aa443b41ef4d7ae4b00dcb57fd3::$classMap;
 
         }, null, ClassLoader::class);
     }
