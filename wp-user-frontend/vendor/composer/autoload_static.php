@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit942d36309fe185175027154a8653427d
+class ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -163,8 +163,12 @@ class ComposerStaticInit942d36309fe185175027154a8653427d
         'WeDevs\\Wpuf\\Admin\\Forms\\Form_Template' => __DIR__ . '/../..' . '/includes/Admin/Forms/Form_Template.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Form_Template' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Form_Template.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Post' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Post.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Video' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Video.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_WooCommerce' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_WooCommerce.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Artwork' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Artwork.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_EDD' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_EDD.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Press_Release' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Press_Release.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Professional_Video' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Professional_Video.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Template_Post' => __DIR__ . '/../..' . '/includes/Admin/Forms/Template_Post.php',
         'WeDevs\\Wpuf\\Admin\\List_Table_Subscribers' => __DIR__ . '/../..' . '/includes/Admin/List_Table_Subscribers.php',
         'WeDevs\\Wpuf\\Admin\\List_Table_Transactions' => __DIR__ . '/../..' . '/includes/Admin/List_Table_Transactions.php',
@@ -266,9 +270,9 @@ class ComposerStaticInit942d36309fe185175027154a8653427d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit942d36309fe185175027154a8653427d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit942d36309fe185175027154a8653427d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit942d36309fe185175027154a8653427d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61::$classMap;
 
         }, null, ClassLoader::class);
     }
