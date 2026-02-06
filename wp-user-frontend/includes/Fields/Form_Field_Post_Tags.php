@@ -61,7 +61,7 @@ class Form_Field_Post_Tags extends Field_Contract {
               <script type="text/javascript">
                 ;(function($) {
                     $(document).ready( function(){
-                        $('li.tags input[name=tags]').suggest( wpuf_frontend.ajaxurl + '<?php echo $query_string; ?>', { delay: 500, minchars: 2, multiple: true, multipleSep: ', ' } );
+                        $('li.tags input[name=tags]').suggest( wpuf_frontend.ajaxurl + '<?php echo esc_js( $query_string ); ?>', { delay: 500, minchars: 2, multiple: true, multipleSep: ', ' } );
                     });
                 })(jQuery);
             </script>
@@ -114,7 +114,7 @@ class Form_Field_Post_Tags extends Field_Contract {
     public function prepare_entry( $field ) {
         check_ajax_referer( 'wpuf_form_add' );
 
-        $field = isset( $_POST[$field['name']] ) ? sanitize_text_field( wp_unslash( $_POST[$field['name']] ) ) : '';
+        $field = isset( $_POST[$field['name']] ) ? strip_shortcodes( sanitize_text_field( wp_unslash( $_POST[$field['name']] ) ) ) : '';
         return $field;
     }
 }

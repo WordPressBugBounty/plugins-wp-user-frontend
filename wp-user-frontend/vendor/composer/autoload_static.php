@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61
+class ComposerStaticInit39db84543de082ae552ab0e62ce58983
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -143,6 +143,12 @@ class ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61
         'WeDevs\\WpUtils\\HookTrait' => __DIR__ . '/..' . '/wedevs/wp-utils/src/HookTrait.php',
         'WeDevs\\WpUtils\\LogTrait' => __DIR__ . '/..' . '/wedevs/wp-utils/src/LogTrait.php',
         'WeDevs\\WpUtils\\SingletonTrait' => __DIR__ . '/..' . '/wedevs/wp-utils/src/SingletonTrait.php',
+        'WeDevs\\Wpuf\\AI\\Config' => __DIR__ . '/../..' . '/includes/AI/Config.php',
+        'WeDevs\\Wpuf\\AI\\Field_Templates' => __DIR__ . '/../..' . '/includes/AI/Field_Templates.php',
+        'WeDevs\\Wpuf\\AI\\FormGenerator' => __DIR__ . '/../..' . '/includes/AI/FormGenerator.php',
+        'WeDevs\\Wpuf\\AI\\Form_Builder' => __DIR__ . '/../..' . '/includes/AI/Form_Builder.php',
+        'WeDevs\\Wpuf\\AI\\RestController' => __DIR__ . '/../..' . '/includes/AI/RestController.php',
+        'WeDevs\\Wpuf\\AI_Manager' => __DIR__ . '/../..' . '/includes/AI_Manager.php',
         'WeDevs\\Wpuf\\API' => __DIR__ . '/../..' . '/includes/API.php',
         'WeDevs\\Wpuf\\Admin' => __DIR__ . '/../..' . '/includes/Admin.php',
         'WeDevs\\Wpuf\\Admin\\Admin_Installer' => __DIR__ . '/../..' . '/includes/Admin/Admin_Installer.php',
@@ -152,6 +158,7 @@ class ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61
         'WeDevs\\Wpuf\\Admin\\Admin_Welcome' => __DIR__ . '/../..' . '/includes/Admin/Admin_Welcome.php',
         'WeDevs\\Wpuf\\Admin\\Customizer_Options' => __DIR__ . '/../..' . '/includes/Admin/Customizer_Options.php',
         'WeDevs\\Wpuf\\Admin\\Dashboard_Metabox' => __DIR__ . '/../..' . '/includes/Admin/Dashboard_Metabox.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\AI_Form_Handler' => __DIR__ . '/../..' . '/includes/Admin/Forms/AI_Form_Handler.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Admin_Form' => __DIR__ . '/../..' . '/includes/Admin/Forms/Admin_Form.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Admin_Form_Builder' => __DIR__ . '/../..' . '/includes/Admin/Forms/Admin_Form_Builder.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Admin_Form_Builder_Free' => __DIR__ . '/../..' . '/includes/Admin/Forms/Admin_Form_Builder_Free.php',
@@ -247,6 +254,7 @@ class ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61
         'WeDevs\\Wpuf\\Integrations\\TEC_Venue_Organizer_Fix' => __DIR__ . '/../..' . '/includes/Integrations/TEC_Venue_Organizer_Fix.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_ACF_Compatibility' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_ACF_Compatibility.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_Dokan_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_Dokan_Integration.php',
+        'WeDevs\\Wpuf\\Integrations\\WPUF_N8N_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_N8N_Integration.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_WCMp_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_WCMp_Integration.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_WC_Vendors_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_WC_Vendors_Integration.php',
         'WeDevs\\Wpuf\\Lib\\Appsero\\Client' => __DIR__ . '/../..' . '/Lib/Appsero/Client.php',
@@ -270,9 +278,9 @@ class ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit7e7552d85a336f4c2da5d95981d34a61::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit39db84543de082ae552ab0e62ce58983::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit39db84543de082ae552ab0e62ce58983::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit39db84543de082ae552ab0e62ce58983::$classMap;
 
         }, null, ClassLoader::class);
     }

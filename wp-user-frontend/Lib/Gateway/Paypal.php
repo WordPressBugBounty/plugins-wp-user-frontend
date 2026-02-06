@@ -129,7 +129,7 @@ class Paypal {
                     type: 'POST',
                     data: {
                         action: 'wpuf_dismiss_paypal_notice',
-                        nonce: '<?php echo wp_create_nonce( 'wpuf_dismiss_paypal_notice' ); ?>'
+                        nonce: '<?php echo esc_js( wp_create_nonce( 'wpuf_dismiss_paypal_notice' ) ); ?>'
                     },
                     success: function(response) {
                         // Handle success if needed
@@ -465,7 +465,7 @@ class Paypal {
 
                 $acknowledged = true;
             } catch ( \Exception $e ) {
-               throw new \Exception( 'Webhook processing failed: ' . $e->getMessage() );
+               throw new \Exception( 'Webhook processing failed: ' . esc_html( $e->getMessage() ) );
             }
 
             // Always acknowledge to PayPal
@@ -635,7 +635,7 @@ class Paypal {
                 'recurring' => 'yes',
                 'cycle_period' => $period,
                 'cycle_number' => $interval,
-                'postnum_rollback_on_delete' => isset( $pack_meta['_postnum_rollback_on_delete'] ) ? $pack_meta['_postnum_rollback_on_delete'] : '',
+                'postnum_rollback_on_delete' => isset( $pack_meta['postnum_rollback_on_delete'] ) ? $pack_meta['postnum_rollback_on_delete'] : '',
                 '_enable_post_expiration' => isset( $pack_meta['_enable_post_expiration'] ) ? $pack_meta['_enable_post_expiration'] : 'no',
                 '_post_expiration_time' => isset( $pack_meta['_post_expiration_time'] ) ? $pack_meta['_post_expiration_time'] : '',
                 '_expired_post_status' => isset( $pack_meta['_expired_post_status'] ) ? $pack_meta['_expired_post_status'] : 'publish',
@@ -1257,6 +1257,22 @@ class Paypal {
             $billing_amount = empty( $data['price'] ) ? 0 : $data['price'];
             $tax_amount = 0;
 
+            // Check if pricing fields payment is enabled and update price accordingly
+            $post_id = isset( $data['item_number'] ) && $data['type'] === 'post' ? $data['item_number'] : 0;
+            if ( $post_id && $data['type'] === 'post' ) {
+                $form_id = get_post_meta( $post_id, '_wpuf_form_id', true );
+                if ( $form_id ) {
+                    $form_settings = wpuf_get_form_settings( $form_id );
+                    $pricing_enabled = isset( $form_settings['enable_pricing_payment'] ) && wpuf_is_checkbox_or_toggle_on( $form_settings['enable_pricing_payment'] );
+                    if ( $pricing_enabled ) {
+                        $pricing_cost = get_post_meta( $post_id, '_wpuf_pricing_field_cost', true );
+                        if ( $pricing_cost && is_numeric( $pricing_cost ) ) {
+                            $billing_amount = floatval( $pricing_cost );
+                        }
+                    }
+                }
+            }
+
             // Handle tax if enabled
             if ( $this->wpuf_tax_enabled() ) {
                 $tax_rate = $this->wpuf_current_tax_rate();
@@ -1276,7 +1292,7 @@ class Paypal {
 
             $data['subtotal'] = $billing_amount - $tax_amount;
             $data['tax'] = $tax_amount;
-            $billing_amount = apply_filters( 'wpuf_payment_amount', $billing_amount );
+            $billing_amount = apply_filters( 'wpuf_payment_amount', $billing_amount, $post_id );
 
             // Handle free payments
             if ( $billing_amount == 0 ) {
@@ -1522,7 +1538,7 @@ class Paypal {
                 exit();
             }
         } catch ( \Exception $e ) {
-            wp_die( $e->getMessage() );
+            wp_die( esc_html( $e->getMessage() ) );
         }
     }
 
@@ -2066,7 +2082,7 @@ class Paypal {
                 }
             }
         } catch ( \Exception $e ) {
-            throw new \Exception( 'Error handling subscription activation: ' . $e->getMessage() );
+            throw new \Exception( 'Error handling subscription activation: ' . $e->getMessage(), 0, $e );
         }
     }
 }

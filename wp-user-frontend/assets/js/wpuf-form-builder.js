@@ -115,20 +115,53 @@
                 for (i = 0; i < state.form_fields.length; i++) {
                     // check if the editing field exist in normal fields
                     if (state.form_fields[i].id === parseInt(payload.editing_field_id)) {
+                        // Store original values before making changes
+                        var original_read_only = state.form_fields[i].read_only;
+                        var original_required = state.form_fields[i].required;
+
                         if ( 'read_only' === payload.field_name && (payload.value === true || payload.value === 'yes') ) {
-                            state.form_fields[i].required = false;
+                            // Only set required to 'no' if it's currently 'yes' (to avoid unnecessary updates)
+                            if (state.form_fields[i].required === 'yes') {
+                                Vue.set(state.form_fields[i], 'required', 'no');
+                            }
                         }
 
                         if ( 'required' === payload.field_name && (payload.value === true || payload.value === 'yes') ) {
-                            state.form_fields[i].read_only = false;
+                            // Only set read_only to empty string if it's currently true/yes (to avoid unnecessary updates)
+                            // Empty string is what the checkbox expects when unchecked (for is_single_opt checkboxes)
+                            if (state.form_fields[i].read_only === true || state.form_fields[i].read_only === 'yes') {
+                                // Use Vue.set to ensure reactivity, and set it before assigning required
+                                Vue.set(state.form_fields[i], 'read_only', '');
+                                // Force object property access to ensure Vue processes the change
+                                // This creates a micro-delay that allows Vue's reactivity to propagate
+                                JSON.stringify({ r: state.form_fields[i].read_only });
+                            }
+                        }
+
+                        // Prevent infinite loop: if this mutation was triggered by our programmatic change,
+                        // don't apply mutual exclusion again
+                        if ( 'required' === payload.field_name && original_required === 'no' && payload.value === 'yes' ) {
+                            // This is likely a user trying to set required back to 'yes' after we set it to 'no'
+                            // Check if read_only was just set
+                            if (original_read_only === true || original_read_only === 'yes') {
+                                Vue.set(state.form_fields[i], 'read_only', '');
+                                // Force object property access to ensure Vue processes the change
+                                JSON.stringify({ r: state.form_fields[i].read_only });
+                            }
                         }
 
                         if (payload.field_name === 'name'  && ! state.form_fields[i].hasOwnProperty('is_new') ) {
                             continue;
                         } else {
+                            // Prevent setting required to 'yes' if read_only is true
+                            if (payload.field_name === 'required' && payload.value === 'yes') {
+                                if (state.form_fields[i].read_only === true || state.form_fields[i].read_only === 'yes') {
+                                    continue; // Skip updating required if read_only is set
+                                }
+                            }
+                            
                             state.form_fields[i][payload.field_name] = payload.value;
                         }
-
                     }
 
                     // check if the editing field belongs to a column field
@@ -185,6 +218,16 @@
 
             // add new form field element
             add_form_field_element: function (state, payload) {
+                // Initialize icon properties for new fields to ensure Vue reactivity
+                if (!payload.field.hasOwnProperty('show_icon')) {
+                    payload.field.show_icon = 'no';
+                }
+                if (!payload.field.hasOwnProperty('field_icon')) {
+                    payload.field.field_icon = '';
+                }
+                if (!payload.field.hasOwnProperty('icon_position')) {
+                    payload.field.icon_position = 'left_label';
+                }
 
                 state.form_fields.splice(payload.toIndex, 0, payload.field);
                 var sprintf = wp.i18n.sprintf;
@@ -394,6 +437,7 @@
             delete_form_field_element: function (state, index) {
                 state.current_panel = 'form-fields-v4-1';
                 state.form_fields.splice(index, 1);
+                state.editing_field_id = 0;
             },
 
             // set fields for a panel section
@@ -729,6 +773,24 @@
         },
 
         mounted: function () {
+            // Ensure all fields have proper default values for icon settings when editing existing forms
+            this.$store.state.form_fields.forEach(function(field) {
+                // If show_icon is not set in the database, default it to 'no'
+                if (field.show_icon === undefined || field.show_icon === null) {
+                    field.show_icon = 'no';
+                }
+
+                // If field_icon is not set in the database, set it to default icon fas fa-0
+                if (field.field_icon === undefined || field.field_icon === null) {
+                    field.field_icon = 'fas fa-0';
+                }
+
+                // If icon_position is not set, default it to 'left_label'
+                if (field.icon_position === undefined || field.icon_position === null) {
+                    field.icon_position = 'left_label';
+                }
+            });
+
             // Check if there are hidden custom taxonomy fields and show warning
             if (wpuf_form_builder.has_hidden_taxonomies && !wpuf_form_builder.is_pro_active) {
                 var self = this;
@@ -833,6 +895,21 @@
                 }, 1000);
 
                 e.clearSelection();
+            });
+
+            // Mutual exclusivity between Enable Payments and Enable Pricing Fields Payment
+            $(document).on('change', '#payment_options', function() {
+                if ($(this).is(':checked')) {
+                    // When Enable Payments is turned ON, turn OFF Enable Pricing Fields Payment
+                    $('#enable_pricing_payment').prop('checked', false).trigger('change');
+                }
+            });
+
+            $(document).on('change', '#enable_pricing_payment', function() {
+                if ($(this).is(':checked')) {
+                    // When Enable Pricing Fields Payment is turned ON, turn OFF Enable Payments
+                    $('#payment_options').prop('checked', false).trigger('change');
+                }
             });
         },
 
@@ -1246,6 +1323,13 @@
                         field: 'limit_entries',
                         value: true
                     }]
+                },
+                n8n_webhook_url: {
+                    type: 'text',
+                    dependsOn: [{
+                        field: 'enable_n8n',
+                        value: true
+                    }],
                 }
             }
         };

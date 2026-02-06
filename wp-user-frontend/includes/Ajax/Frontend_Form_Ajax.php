@@ -130,7 +130,40 @@ class Frontend_Form_Ajax {
             }
         }
 
+        // Attachment deletion authorization check
+        $current_user_id = get_current_user_id();
+        $post_id_for_edit = isset( $_POST['post_id'] ) ? intval( wp_unslash( $_POST['post_id'] ) ) : 0;
+
         foreach ( $attachments_to_delete as $attach_id ) {
+            $attach_id = absint( $attach_id );
+
+            if ( empty( $attach_id ) ) {
+                continue;
+            }
+
+            $attachment = get_post( $attach_id );
+
+            // Skip if attachment doesn't exist or is not an attachment
+            if ( ! $attachment || 'attachment' !== $attachment->post_type ) {
+                continue;
+            }
+
+            // Authorization check: User must be the attachment author OR have delete_others_posts capability
+            $is_owner = ( $current_user_id > 0 ) && ( (int) $attachment->post_author === $current_user_id );
+            $can_delete_others = current_user_can( 'delete_others_posts' );
+
+            if ( ! $is_owner && ! $can_delete_others ) {
+                continue;
+            }
+
+            if ( $post_id_for_edit > 0 ) {
+                $attachment_parent = (int) $attachment->post_parent;
+
+                if ( $attachment_parent !== 0 && $attachment_parent !== $post_id_for_edit && ! $can_delete_others ) {
+                    continue;
+                }
+            }
+
             wp_delete_attachment( $attach_id, true );
         }
 
@@ -159,9 +192,9 @@ class Frontend_Form_Ajax {
             'post_type'    => ! empty( $this->form_settings['post_type'] ) ? $this->form_settings['post_type'] : 'post',
             'post_status'  => isset( $this->form_settings['post_status'] ) ? $this->form_settings['post_status'] : 'publish',
             'post_author'  => $post_author,
-            'post_title'   => isset( $_POST['post_title'] ) ? sanitize_text_field( wp_unslash( $_POST['post_title'] ) ) : '',
-            'post_content' => isset( $_POST['post_content'] ) ? wp_kses( wp_unslash( $_POST['post_content'] ), $allowed_tags ) : '',
-            'post_excerpt' => isset( $_POST['post_excerpt'] ) ? wp_kses( wp_unslash( $_POST['post_excerpt'] ), $allowed_tags ) : '',
+            'post_title'   => isset( $_POST['post_title'] ) ? strip_shortcodes( sanitize_text_field( wp_unslash( $_POST['post_title'] ) ) ) : '',
+            'post_content' => isset( $_POST['post_content'] ) ? strip_shortcodes( wp_kses( wp_unslash( $_POST['post_content'] ), $allowed_tags ) ) : '',
+            'post_excerpt' => isset( $_POST['post_excerpt'] ) ? strip_shortcodes( wp_kses( wp_unslash( $_POST['post_excerpt'] ), $allowed_tags ) ) : '',
         ];
 
         // $charging_enabled = wpuf_get_option( 'charge_posting', 'wpuf_payment' );
@@ -228,6 +261,22 @@ class Frontend_Form_Ajax {
         // if post_id is passed, we update the post
         if ( isset( $_POST['post_id'] ) ) {
             $post_id                   = intval( wp_unslash( $_POST['post_id'] ) );
+
+            // Verify the post exists
+            $post = get_post( $post_id );
+            if ( ! $post || is_wp_error( $post ) ) {
+                wpuf()->ajax->send_error( __( 'Post not found.', 'wp-user-frontend' ) );
+            }
+
+            // Security: Check if user has permission to edit this post (Broken Access Control fix)
+            $post_author = (int) get_post_field( 'post_author', $post_id );
+            $current_user_id = get_current_user_id();
+
+            // Allow edit if: user is post author OR user has edit_others_posts capability
+            if ( $current_user_id !== $post_author && ! current_user_can( 'edit_others_posts' ) ) {
+                wpuf()->ajax->send_error( __( 'You do not have permission to edit this post.', 'wp-user-frontend' ) );
+            }
+
             $is_update                 = true;
             $postarr['ID']             = $post_id;
             $postarr['post_date']      = isset( $_POST['post_date'] ) ? sanitize_text_field( wp_unslash( $_POST['post_date'] ) ) : '';
