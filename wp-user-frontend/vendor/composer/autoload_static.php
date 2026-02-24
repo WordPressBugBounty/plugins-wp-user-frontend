@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit39db84543de082ae552ab0e62ce58983
+class ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -150,6 +150,7 @@ class ComposerStaticInit39db84543de082ae552ab0e62ce58983
         'WeDevs\\Wpuf\\AI\\RestController' => __DIR__ . '/../..' . '/includes/AI/RestController.php',
         'WeDevs\\Wpuf\\AI_Manager' => __DIR__ . '/../..' . '/includes/AI_Manager.php',
         'WeDevs\\Wpuf\\API' => __DIR__ . '/../..' . '/includes/API.php',
+        'WeDevs\\Wpuf\\Abstracts\\Payment_Gateway' => __DIR__ . '/../..' . '/includes/Abstracts/Payment_Gateway.php',
         'WeDevs\\Wpuf\\Admin' => __DIR__ . '/../..' . '/includes/Admin.php',
         'WeDevs\\Wpuf\\Admin\\Admin_Installer' => __DIR__ . '/../..' . '/includes/Admin/Admin_Installer.php',
         'WeDevs\\Wpuf\\Admin\\Admin_Settings' => __DIR__ . '/../..' . '/includes/Admin/Admin_Settings.php',
@@ -251,7 +252,6 @@ class ComposerStaticInit39db84543de082ae552ab0e62ce58983
         'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Utils\\TEC_Constants' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Utils/TEC_Constants.php',
         'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Validators\\Date_Validator' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Validators/Date_Validator.php',
         'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Validators\\Event_Validator' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Validators/Event_Validator.php',
-        'WeDevs\\Wpuf\\Integrations\\TEC_Venue_Organizer_Fix' => __DIR__ . '/../..' . '/includes/Integrations/TEC_Venue_Organizer_Fix.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_ACF_Compatibility' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_ACF_Compatibility.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_Dokan_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_Dokan_Integration.php',
         'WeDevs\\Wpuf\\Integrations\\WPUF_N8N_Integration' => __DIR__ . '/../..' . '/includes/Integrations/WPUF_N8N_Integration.php',
@@ -261,7 +261,11 @@ class ComposerStaticInit39db84543de082ae552ab0e62ce58983
         'WeDevs\\Wpuf\\Lib\\Appsero\\Insights' => __DIR__ . '/../..' . '/Lib/Appsero/Insights.php',
         'WeDevs\\Wpuf\\Lib\\Appsero\\License' => __DIR__ . '/../..' . '/Lib/Appsero/License.php',
         'WeDevs\\Wpuf\\Lib\\Gateway\\Bank' => __DIR__ . '/../..' . '/Lib/Gateway/Bank.php',
+        'WeDevs\\Wpuf\\Lib\\Gateway\\Bank_Gateway' => __DIR__ . '/../..' . '/Lib/Gateway/Bank_Gateway.php',
+        'WeDevs\\Wpuf\\Lib\\Gateway\\Gateway_Manager' => __DIR__ . '/../..' . '/Lib/Gateway/Gateway_Manager.php',
+        'WeDevs\\Wpuf\\Lib\\Gateway\\Manager' => __DIR__ . '/../..' . '/Lib/Gateway/Manager.php',
         'WeDevs\\Wpuf\\Lib\\Gateway\\Paypal' => __DIR__ . '/../..' . '/Lib/Gateway/Paypal.php',
+        'WeDevs\\Wpuf\\Lib\\Gateway\\Paypal_Gateway' => __DIR__ . '/../..' . '/Lib/Gateway/Paypal_Gateway.php',
         'WeDevs\\Wpuf\\Lib\\WeDevs_Insights' => __DIR__ . '/../..' . '/Lib/WeDevs_Insights.php',
         'WeDevs\\Wpuf\\Pro_Upgrades' => __DIR__ . '/../..' . '/includes/Pro_Upgrades.php',
         'WeDevs\\Wpuf\\Render_Form' => __DIR__ . '/../..' . '/includes/Render_Form.php',
@@ -278,9 +282,9 @@ class ComposerStaticInit39db84543de082ae552ab0e62ce58983
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit39db84543de082ae552ab0e62ce58983::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit39db84543de082ae552ab0e62ce58983::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit39db84543de082ae552ab0e62ce58983::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2::$classMap;
 
         }, null, ClassLoader::class);
     }
