@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2
+class ComposerStaticInit2d3d305980fb6af95a0d4a837ff580c6
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -175,8 +175,10 @@ class ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_WooCommerce' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_WooCommerce.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Artwork' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Artwork.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_EDD' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_EDD.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Portfolio' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Portfolio.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Press_Release' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Press_Release.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Professional_Video' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Professional_Video.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Volunteer' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Volunteer.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Template_Post' => __DIR__ . '/../..' . '/includes/Admin/Forms/Template_Post.php',
         'WeDevs\\Wpuf\\Admin\\List_Table_Subscribers' => __DIR__ . '/../..' . '/includes/Admin/List_Table_Subscribers.php',
         'WeDevs\\Wpuf\\Admin\\List_Table_Transactions' => __DIR__ . '/../..' . '/includes/Admin/List_Table_Transactions.php',
@@ -282,9 +284,9 @@ class ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit8d59fd8c8381e6b3ee5c061690669af2::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2d3d305980fb6af95a0d4a837ff580c6::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2d3d305980fb6af95a0d4a837ff580c6::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2d3d305980fb6af95a0d4a837ff580c6::$classMap;
 
         }, null, ClassLoader::class);
     }
