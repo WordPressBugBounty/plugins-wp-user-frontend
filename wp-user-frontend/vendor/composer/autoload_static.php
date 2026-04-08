@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8157981006589c52a1ffe646d76fb7a1
+class ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -244,6 +244,10 @@ class ComposerStaticInit8157981006589c52a1ffe646d76fb7a1
         'WeDevs\\Wpuf\\Hooks\\Form_Settings_Cleanup' => __DIR__ . '/../..' . '/includes/Hooks/Form_Settings_Cleanup.php',
         'WeDevs\\Wpuf\\Installer' => __DIR__ . '/../..' . '/includes/Installer.php',
         'WeDevs\\Wpuf\\Integrations' => __DIR__ . '/../..' . '/includes/Integrations.php',
+        'WeDevs\\Wpuf\\Integrations\\Elementor\\Account_Widget' => __DIR__ . '/../..' . '/includes/Integrations/Elementor/Account_Widget.php',
+        'WeDevs\\Wpuf\\Integrations\\Elementor\\Elementor' => __DIR__ . '/../..' . '/includes/Integrations/Elementor/Elementor.php',
+        'WeDevs\\Wpuf\\Integrations\\Elementor\\Subscription_Plans_Widget' => __DIR__ . '/../..' . '/includes/Integrations/Elementor/Subscription_Plans_Widget.php',
+        'WeDevs\\Wpuf\\Integrations\\Elementor\\Widget' => __DIR__ . '/../..' . '/includes/Integrations/Elementor/Widget.php',
         'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Compatibility\\TEC_Compatibility_Manager' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Compatibility/TEC_Compatibility_Manager.php',
         'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Compatibility\\TEC_V5_Compatibility' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Compatibility/TEC_V5_Compatibility.php',
         'WeDevs\\Wpuf\\Integrations\\Events_Calendar\\Compatibility\\TEC_V6_Compatibility' => __DIR__ . '/../..' . '/includes/Integrations/Events_Calendar/Compatibility/TEC_V6_Compatibility.php',
@@ -284,9 +288,9 @@ class ComposerStaticInit8157981006589c52a1ffe646d76fb7a1
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8157981006589c52a1ffe646d76fb7a1::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8157981006589c52a1ffe646d76fb7a1::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit8157981006589c52a1ffe646d76fb7a1::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a::$classMap;
 
         }, null, ClassLoader::class);
     }
