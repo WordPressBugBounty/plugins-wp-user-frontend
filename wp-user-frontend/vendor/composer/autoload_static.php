@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a
+class ComposerStaticInitff0c7435e0c32b4410ff4faeacd1fe87
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -170,6 +170,8 @@ class ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a
         'WeDevs\\Wpuf\\Admin\\Forms\\Form_Manager' => __DIR__ . '/../..' . '/includes/Admin/Forms/Form_Manager.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Form_Template' => __DIR__ . '/../..' . '/includes/Admin/Forms/Form_Template.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Form_Template' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Form_Template.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Guest_Post_Recurring' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Guest_Post_Recurring.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Paid_Guest_Post' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Paid_Guest_Post.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Post' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Post.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_Video' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_Video.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Post_Form_Template_WooCommerce' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Post_Form_Template_WooCommerce.php',
@@ -178,6 +180,7 @@ class ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Portfolio' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Portfolio.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Press_Release' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Press_Release.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Professional_Video' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Professional_Video.php',
+        'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Testimonial' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Testimonial.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Post\\Templates\\Pro_Form_Preview_Volunteer' => __DIR__ . '/../..' . '/includes/Admin/Forms/Post/Templates/Pro_Form_Preview_Volunteer.php',
         'WeDevs\\Wpuf\\Admin\\Forms\\Template_Post' => __DIR__ . '/../..' . '/includes/Admin/Forms/Template_Post.php',
         'WeDevs\\Wpuf\\Admin\\List_Table_Subscribers' => __DIR__ . '/../..' . '/includes/Admin/List_Table_Subscribers.php',
@@ -288,9 +291,9 @@ class ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit43f3025e7dd260a00a6610b04cfbb47a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitff0c7435e0c32b4410ff4faeacd1fe87::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitff0c7435e0c32b4410ff4faeacd1fe87::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitff0c7435e0c32b4410ff4faeacd1fe87::$classMap;
 
         }, null, ClassLoader::class);
     }
