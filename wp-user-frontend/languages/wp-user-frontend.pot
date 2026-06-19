@@ -2,9 +2,9 @@
 # This file is distributed under the GPL2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP User Frontend 4.3.7\n"
+"Project-Id-Version: WP User Frontend 4.3.8\n"
 "Report-Msgid-Bugs-To: https://wedevs.com/contact/\n"
-"POT-Creation-Date: 2026-06-04 07:58:54+00:00\n"
+"POT-Creation-Date: 2026-06-19 12:14:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -234,11 +234,41 @@ msgstr ""
 msgid "Enable %s"
 msgstr ""
 
-#: Lib/WeDevs_Settings_API.php:609
+#: Lib/WeDevs_Settings_API.php:418
+#: includes/Free/templates/page-registration-form.php:148
+#: includes/functions/settings-options.php:487
+#: includes/functions/settings-options.php:497
+#: includes/functions/settings-options.php:504
+#: includes/functions/settings-options.php:511
+#: includes/functions/settings-options.php:518
+#: includes/functions/settings-options.php:525
+#: includes/functions/settings-options.php:532
+#: includes/functions/settings-options.php:539
+#: includes/functions/settings-options.php:546
+#: includes/functions/settings-options.php:553
+#: includes/functions/settings-options.php:560
+#: includes/functions/settings-options.php:567
+#: includes/functions/settings-options.php:574
+#: includes/functions/settings-options.php:581
+#: includes/functions/settings-options.php:588
+#: includes/functions/settings-options.php:595
+#: includes/functions/settings-options.php:602
+#: includes/functions/settings-options.php:609
+#: includes/functions/settings-options.php:616
+#: includes/functions/settings-options.php:623
+#: includes/functions/settings-options.php:630
+#: includes/functions/settings-options.php:637
+#: includes/functions/settings-options.php:644
+#: includes/functions/settings-options.php:651
+#: includes/functions/settings-options.php:659
+msgid "PRO"
+msgstr ""
+
+#: Lib/WeDevs_Settings_API.php:614
 msgid "Choose File"
 msgstr ""
 
-#: Lib/WeDevs_Settings_API.php:807
+#: Lib/WeDevs_Settings_API.php:812
 msgid "Search in settings"
 msgstr ""
 
@@ -1137,7 +1167,7 @@ msgid "Form Pending Message"
 msgstr ""
 
 #: admin/html/form-submission-restriction.php:158
-#: includes/Free/Free_Loader.php:1924 wpuf-functions.php:6180
+#: includes/Free/Free_Loader.php:1917 wpuf-functions.php:6180
 msgid "Form Expired Message"
 msgstr ""
 
@@ -1765,7 +1795,7 @@ msgstr ""
 #: includes/Admin/Forms/Admin_Template.php:592
 #: includes/Admin/Forms/Admin_Template.php:661
 #: includes/Admin/Forms/Admin_Template.php:746
-#: includes/Ajax/Upload_Ajax.php:227
+#: includes/Ajax/Upload_Ajax.php:238
 #: includes/Fields/Form_Field_Cloudflare_Turnstile.php:108
 #: includes/Fields/Form_Field_SectionBreak.php:57
 #: includes/Fields/Form_Field_reCaptcha.php:160
@@ -1791,7 +1821,7 @@ msgstr ""
 
 #: admin/template.php:583 includes/Admin/Admin_Tools.php:562
 #: includes/Admin/Forms/Admin_Template.php:668
-#: includes/Ajax/Upload_Ajax.php:235
+#: includes/Ajax/Upload_Ajax.php:246
 #: includes/Fields/Form_Field_SectionBreak.php:65
 #: includes/Integrations/Elementor/Widget.php:898 wpuf-functions.php:1177
 msgid "Description"
@@ -2672,13 +2702,13 @@ msgstr ""
 
 #: includes/Admin/Admin_Subscription.php:537
 #: includes/Admin/Admin_Subscription.php:1229 includes/Free/Form_Element.php:63
-#: includes/Free/Free_Loader.php:1896
+#: includes/Free/Free_Loader.php:1889
 msgid "Enable Post Expiration"
 msgstr ""
 
 #: includes/Admin/Admin_Subscription.php:549
 #: includes/Admin/Admin_Subscription.php:844 includes/Free/Form_Element.php:78
-#: includes/Free/Free_Loader.php:1903
+#: includes/Free/Free_Loader.php:1896
 msgid "Post Expiration Time"
 msgstr ""
 
@@ -2712,21 +2742,21 @@ msgstr ""
 #: includes/Admin/Admin_Subscription.php:677
 #: includes/Admin/Admin_Subscription.php:1267
 #: includes/Admin/Admin_Subscription.php:1383
-#: includes/Free/Free_Loader.php:1911
+#: includes/Free/Free_Loader.php:1904
 msgid "Day(s)"
 msgstr ""
 
 #: includes/Admin/Admin_Subscription.php:678
 #: includes/Admin/Admin_Subscription.php:1268
 #: includes/Admin/Admin_Subscription.php:1384
-#: includes/Free/Free_Loader.php:1912
+#: includes/Free/Free_Loader.php:1905
 msgid "Week(s)"
 msgstr ""
 
 #: includes/Admin/Admin_Subscription.php:679
 #: includes/Admin/Admin_Subscription.php:1269
 #: includes/Admin/Admin_Subscription.php:1385
-#: includes/Free/Free_Loader.php:1913
+#: includes/Free/Free_Loader.php:1906
 msgid "Month(s)"
 msgstr ""
 
@@ -3362,7 +3392,7 @@ msgstr ""
 msgid "Example"
 msgstr ""
 
-#: includes/Admin/Admin_Tools.php:576 includes/Free/Free_Loader.php:1981
+#: includes/Admin/Admin_Tools.php:576 includes/Free/Free_Loader.php:1974
 msgid "Pro"
 msgstr ""
 
@@ -3848,7 +3878,7 @@ msgid "&mdash; No Template &mdash;"
 msgstr ""
 
 #: includes/Admin/Forms/Post/Templates/Form_Template.php:231
-#: includes/Free/Free_Loader.php:1852 wpuf-functions.php:5837
+#: includes/Free/Free_Loader.php:1845 wpuf-functions.php:5837
 msgid ""
 "If selected a form template, it will try to execute that integration "
 "options when new post created and updated."
@@ -4020,9 +4050,9 @@ msgstr ""
 #: includes/Admin/Forms/Post/Templates/Post_Form_Template_Post.php:16
 #: includes/Admin/Menu.php:116 includes/Admin/template-parts/modal-v4.2.php:70
 #: includes/Admin/views/shortcode-builder.php:8
-#: includes/Free/Free_Loader.php:1858 includes/Free/Free_Loader.php:1862
-#: includes/Free/Free_Loader.php:1866 includes/Free/Free_Loader.php:1870
-#: includes/Free/Free_Loader.php:1874 wpuf-functions.php:5716
+#: includes/Free/Free_Loader.php:1851 includes/Free/Free_Loader.php:1855
+#: includes/Free/Free_Loader.php:1859 includes/Free/Free_Loader.php:1863
+#: includes/Free/Free_Loader.php:1867 wpuf-functions.php:5716
 msgid "Post Form"
 msgstr ""
 
@@ -4609,7 +4639,7 @@ msgid ""
 msgstr ""
 
 #: includes/Admin/views/premium.php:93 includes/Free/Free_Loader.php:157
-#: includes/Free/Free_Loader.php:1152 includes/Free/Free_Loader.php:1943
+#: includes/Free/Free_Loader.php:1152 includes/Free/Free_Loader.php:1936
 msgid "Modules"
 msgstr ""
 
@@ -5644,28 +5674,28 @@ msgstr ""
 msgid "You do not have sufficient permissions to access this form."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:231 wpuf-functions.php:1173
+#: includes/Ajax/Upload_Ajax.php:242 wpuf-functions.php:1173
 msgid "Caption"
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:259
+#: includes/Ajax/Upload_Ajax.php:269
 msgid "attach_id is required."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:264
+#: includes/Ajax/Upload_Ajax.php:274
 msgid "attachment not found."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:273
+#: includes/Ajax/Upload_Ajax.php:278
+msgid "You are not allowed to delete this attachment."
+msgstr ""
+
+#: includes/Ajax/Upload_Ajax.php:283
 msgid "Attachment deleted successfully."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:275
-msgid "Could not deleted the attachment"
-msgstr ""
-
-#: includes/Ajax/Upload_Ajax.php:277
-msgid "Something went wrong."
+#: includes/Ajax/Upload_Ajax.php:285
+msgid "Could not delete the attachment"
 msgstr ""
 
 #: includes/Api/Subscription.php:135 includes/Api/Subscription.php:166
@@ -6383,11 +6413,11 @@ msgstr ""
 msgid " Learn more about Multistep"
 msgstr ""
 
-#: includes/Free/Form_Element.php:188 includes/Free/Free_Loader.php:1734
+#: includes/Free/Form_Element.php:188 includes/Free/Free_Loader.php:1727
 msgid "Multistep Progressbar Type"
 msgstr ""
 
-#: includes/Free/Form_Element.php:198 includes/Free/Free_Loader.php:1736
+#: includes/Free/Form_Element.php:198 includes/Free/Free_Loader.php:1729
 msgid "Choose how you want the progressbar"
 msgstr ""
 
@@ -6395,7 +6425,7 @@ msgstr ""
 msgid "New post created"
 msgstr ""
 
-#: includes/Free/Form_Element.php:232 includes/Free/Free_Loader.php:1789
+#: includes/Free/Form_Element.php:232 includes/Free/Free_Loader.php:1782
 msgid "A post has been edited"
 msgstr ""
 
@@ -6417,13 +6447,13 @@ msgid "Learn more about Email Notification"
 msgstr ""
 
 #: includes/Free/Form_Element.php:255 includes/Free/Form_Element.php:292
-#: includes/Free/Free_Loader.php:1782 wpuf-functions.php:6063
+#: includes/Free/Free_Loader.php:1775 wpuf-functions.php:6063
 #: wpuf-functions.php:6170
 msgid "To"
 msgstr ""
 
 #: includes/Free/Form_Element.php:262 includes/Free/Form_Element.php:297
-#: includes/Free/Free_Loader.php:1787 wpuf-functions.php:6069
+#: includes/Free/Free_Loader.php:1780 wpuf-functions.php:6069
 msgid "Subject"
 msgstr ""
 
@@ -6486,7 +6516,7 @@ msgid "Update Button text"
 msgstr ""
 
 #: includes/Free/Free_Loader.php:201 includes/Free/Free_Loader.php:202
-#: includes/Free/Free_Loader.php:1641 templates/dashboard/subscription.php:388
+#: includes/Free/Free_Loader.php:1634 templates/dashboard/subscription.php:388
 msgid "Coupons"
 msgstr ""
 
@@ -7018,80 +7048,75 @@ msgstr ""
 msgid "Module deactivated successfully"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1488
-#. translators: %s is the crown symbol
-msgid "Credit Card %s"
-msgstr ""
-
-#: includes/Free/Free_Loader.php:1491
+#: includes/Free/Free_Loader.php:1482 includes/Free/Free_Loader.php:1483
 msgid "Credit Card"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1513
+#: includes/Free/Free_Loader.php:1506
 msgid "Taxonomy Restriction "
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1531
+#: includes/Free/Free_Loader.php:1524
 msgid "Choose the taxonomy terms you want to enable for this pack:"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1645
+#: includes/Free/Free_Loader.php:1638
 msgid "Use Coupon codes for subscription for discounts."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1649
+#: includes/Free/Free_Loader.php:1642
 msgid "This feature is only available in the Pro Version."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1653
+#: includes/Free/Free_Loader.php:1646
 msgid "Upgrade to Pro Version"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1654
+#: includes/Free/Free_Loader.php:1647
 msgid "Learn more about Coupons"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1673
+#: includes/Free/Free_Loader.php:1666
 msgid "Taxonomy Access"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1674
+#: includes/Free/Free_Loader.php:1667
 msgid "(Control user access to specific taxonomies)"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1723
+#: includes/Free/Free_Loader.php:1716
 msgid "Enable Multi-Step"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1726
+#: includes/Free/Free_Loader.php:1719
 msgid "If checked, form will be displayed in frontend in multiple steps."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1738
+#: includes/Free/Free_Loader.php:1731
 msgid "Progressbar"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1739
+#: includes/Free/Free_Loader.php:1732
 msgid "Step by Step"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1743
+#: includes/Free/Free_Loader.php:1736
 msgid "Active Text Color"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1745
+#: includes/Free/Free_Loader.php:1738
 msgid "Text color for active step."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1749
+#: includes/Free/Free_Loader.php:1742
 msgid "Active Background Color"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1751
+#: includes/Free/Free_Loader.php:1744
 msgid "Background color for progressbar or active step."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1755
+#: includes/Free/Free_Loader.php:1748
 #: includes/Integrations/Elementor/Account_Widget.php:467
 #: includes/Integrations/Elementor/Account_Widget.php:555
 #: includes/Integrations/Elementor/Account_Widget.php:621
@@ -7114,43 +7139,43 @@ msgstr ""
 msgid "Background Color"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1757
+#: includes/Free/Free_Loader.php:1750
 msgid "Background color for normal steps."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1777
+#: includes/Free/Free_Loader.php:1770
 msgid "Enable Update Post Notification"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1792 wpuf-functions.php:6075
+#: includes/Free/Free_Loader.php:1785 wpuf-functions.php:6075
 msgid "Email Body"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1829
+#: includes/Free/Free_Loader.php:1822
 msgid "Conditional Logic on Submit"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1850 wpuf-functions.php:6114
+#: includes/Free/Free_Loader.php:1843 wpuf-functions.php:6114
 msgid "Choose Form Style"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1908
+#: includes/Free/Free_Loader.php:1901
 msgid "Duration Type"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1919
+#: includes/Free/Free_Loader.php:1912
 msgid "Send post expiration email to author"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1921
+#: includes/Free/Free_Loader.php:1914
 msgid "Verification of email addresses will be mandatory"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1967
+#: includes/Free/Free_Loader.php:1960
 msgid "Available in Pro Version"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1977
+#: includes/Free/Free_Loader.php:1970
 msgid "Bulk Add"
 msgstr ""
 
@@ -7428,35 +7453,6 @@ msgstr ""
 
 #: includes/Free/templates/page-registration-form.php:131
 msgid "How to setup →"
-msgstr ""
-
-#: includes/Free/templates/page-registration-form.php:148
-#: includes/functions/settings-options.php:487
-#: includes/functions/settings-options.php:497
-#: includes/functions/settings-options.php:504
-#: includes/functions/settings-options.php:511
-#: includes/functions/settings-options.php:518
-#: includes/functions/settings-options.php:525
-#: includes/functions/settings-options.php:532
-#: includes/functions/settings-options.php:539
-#: includes/functions/settings-options.php:546
-#: includes/functions/settings-options.php:553
-#: includes/functions/settings-options.php:560
-#: includes/functions/settings-options.php:567
-#: includes/functions/settings-options.php:574
-#: includes/functions/settings-options.php:581
-#: includes/functions/settings-options.php:588
-#: includes/functions/settings-options.php:595
-#: includes/functions/settings-options.php:602
-#: includes/functions/settings-options.php:609
-#: includes/functions/settings-options.php:616
-#: includes/functions/settings-options.php:623
-#: includes/functions/settings-options.php:630
-#: includes/functions/settings-options.php:637
-#: includes/functions/settings-options.php:644
-#: includes/functions/settings-options.php:651
-#: includes/functions/settings-options.php:659
-msgid "PRO"
 msgstr ""
 
 #: includes/Free/templates/page-registration-form.php:151
