@@ -167,6 +167,7 @@ return array(
     'WeDevs\\Wpuf\\Api\\FormList' => $baseDir . '/includes/Api/FormList.php',
     'WeDevs\\Wpuf\\Api\\Subscription' => $baseDir . '/includes/Api/Subscription.php',
     'WeDevs\\Wpuf\\Assets' => $baseDir . '/includes/Assets.php',
+    'WeDevs\\Wpuf\\Blocks\\PostForm' => $baseDir . '/includes/Blocks/PostForm.php',
     'WeDevs\\Wpuf\\Data\\Country_State' => $baseDir . '/includes/Data/Country_State.php',
     'WeDevs\\Wpuf\\Encryption_Helper' => $baseDir . '/includes/Encryption_Helper.php',
     'WeDevs\\Wpuf\\Fields\\Field_Contract' => $baseDir . '/includes/Fields/Field_Contract.php',

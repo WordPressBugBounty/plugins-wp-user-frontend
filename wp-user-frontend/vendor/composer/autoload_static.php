@@ -200,6 +200,7 @@ class ComposerStaticInit1fa30eae591844494a2c8a0926763809
         'WeDevs\\Wpuf\\Api\\FormList' => __DIR__ . '/../..' . '/includes/Api/FormList.php',
         'WeDevs\\Wpuf\\Api\\Subscription' => __DIR__ . '/../..' . '/includes/Api/Subscription.php',
         'WeDevs\\Wpuf\\Assets' => __DIR__ . '/../..' . '/includes/Assets.php',
+        'WeDevs\\Wpuf\\Blocks\\PostForm' => __DIR__ . '/../..' . '/includes/Blocks/PostForm.php',
         'WeDevs\\Wpuf\\Data\\Country_State' => __DIR__ . '/../..' . '/includes/Data/Country_State.php',
         'WeDevs\\Wpuf\\Encryption_Helper' => __DIR__ . '/../..' . '/includes/Encryption_Helper.php',
         'WeDevs\\Wpuf\\Fields\\Field_Contract' => __DIR__ . '/../..' . '/includes/Fields/Field_Contract.php',
