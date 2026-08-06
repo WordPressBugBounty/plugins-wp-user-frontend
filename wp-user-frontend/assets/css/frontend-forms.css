@@ -1,5 +1,9 @@
 /* DivTable.com */
 body {
+  /* Skin rules for layout1 (default) have been moved to
+ * assets/css/frontend-form/layout1.css, scoped to .wpuf-form-layout1.
+ * Each layout now owns its own visual skin; frontend-forms.css is structural only.
+ */
   /* Commented out to allow Tailwind styles for subscription packs
 .entry-content ul.wpuf_packs,
 ul.wpuf_packs {
@@ -277,106 +281,6 @@ body .wpuf-info {
   padding: 5px 10px;
   margin: 0 0 10px 0;
   font-size: 13px;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=text],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=text],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=password],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=password],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=email],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=email],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=url],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=url],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=number],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=number],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=tel],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=tel],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields textarea,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields textarea {
-  background: #fafafa;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-  color: #888;
-  width: 95%;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=text]:focus,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=text]:focus,
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=password]:focus,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=password]:focus,
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=email]:focus,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=email]:focus,
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=url]:focus,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=url]:focus,
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=number]:focus,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=number]:focus,
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields textarea:focus,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields textarea:focus {
-  color: #373737;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields textarea,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields textarea {
-  padding-left: 3px;
-  width: 95%;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=text],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=text],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=password],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=password],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=email],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=email],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=url],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=url],
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields input[type=number],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields input[type=number] {
-  padding: 5px;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields select,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields select {
-  border: 1px solid #eee;
-  padding: 2px;
-  height: 2em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  min-width: 150px;
-  max-width: 100%;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields select[multiple],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields select[multiple] {
-  height: auto;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-fields-inline,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-fields-inline {
-  display: flex;
-  justify-content: space-between;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit],
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit] {
-  font-size: 16px;
-  padding: 5px 15px;
-  line-height: inherit;
-  height: inherit;
-  border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background: #0085ba;
-  border-color: #0073aa #006799 #006799;
-  -webkit-box-shadow: 0 1px 0 #006799;
-  box-shadow: 0 1px 0 #006799;
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
-}
-body #form-preview-stage.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit]:disabled,
-body .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit]:disabled {
-  background: #dddddd;
-  border-color: #dddddd;
-  -webkit-box-shadow: 0 1px 0 #dddddd;
-  box-shadow: 0 1px 0 #dddddd;
-  color: #000;
-  text-shadow: 0 -1px 1px #dddddd, 1px 0 1px #dddddd, 0 1px 1px #dddddd, -1px 0 1px #dddddd;
 }
 body ul.wpuf-form {
   list-style: none !important;
@@ -1291,14 +1195,65 @@ body fieldset.wpuf-multistep-fieldset {
 body fieldset.wpuf-multistep-fieldset.field-active {
   display: block;
 }
-body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-next-btn.btn.btn-primary {
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #4b5563;
+  white-space: nowrap;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  cursor: pointer;
+}
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-nav-btn:hover {
+  background: #f9fafb;
+}
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-nav-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-next-btn,
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-prev-btn {
   position: absolute;
   bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: none;
+  background-color: #99A7B2;
+  color: #ffffff;
+  text-shadow: unset;
+}
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-next-btn:hover,
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-prev-btn:hover {
+  background-color: #7F8C96;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-next-btn:focus,
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-prev-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #99A7B2;
+}
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-next-btn {
   right: 0;
 }
-body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-prev-btn.btn.btn-primary {
-  position: absolute;
-  bottom: 0;
+body fieldset.wpuf-multistep-fieldset button.wpuf-multistep-prev-btn {
   left: 0;
 }
 body fieldset.wpuf-multistep-fieldset a#wpuf-post-draft {
@@ -1319,74 +1274,89 @@ body fieldset.wpuf-multistep-fieldset span.wpuf-loading {
 body .wpuf-multistep-progressbar {
   overflow: hidden;
 }
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard {
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-wizard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   margin: 20px 0 40px 0;
   padding: 0;
-  list-style: none;
 }
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard * {
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-wizard * {
   box-sizing: border-box;
 }
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard li {
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #E4E4E4;
+  background-color: #fff;
+  color: #E4E4E4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-label {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #E4E4E4;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-line {
+  flex: 1;
+  height: 2px;
   background-color: #E4E4E4;
-  border-radius: 5px;
-  display: inline-block;
-  padding: 10px 30px 10px 40px;
-  margin-right: -7px;
-  width: auto;
-  margin: 0;
-  position: relative;
-  text-align: center;
+  margin-top: 18px;
+  min-width: 40px;
+  transition: background-color 0.3s ease;
 }
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard li::before,
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard li::after {
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  border-color: transparent;
-  border-left-color: #fff;
-  border-radius: 10px;
-}
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard li::before {
-  border-width: 26px;
-  margin-top: -14px;
-  right: -52px;
-  z-index: 98;
-}
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard li::after {
-  border-left-color: #E4E4E4;
-  border-width: 25px;
-  margin-top: -37px;
-  right: -44px;
-  z-index: 99;
-}
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard li.active-step {
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-line-active {
   background-color: #00a0d2;
+}
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-item.active-step .wpuf-step-circle,
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-item.completed-step .wpuf-step-circle {
+  background-color: #00a0d2;
+  border-color: #00a0d2;
   color: #fff;
 }
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard li.active-step::after {
-  border-left-color: #00a0d2;
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-item.active-step .wpuf-step-label,
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-step-item.completed-step .wpuf-step-label {
+  color: #333;
+  font-weight: 600;
 }
-body .wpuf-form .wpuf-multistep-progressbar ul.wpuf-step-wizard li:last-child::after {
-  border-left-color: transparent;
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-progressbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
 }
-body .wpuf-form .wpuf-multistep-progressbar .ui-widget-header {
-  background: #00a0d2;
-}
-body .wpuf-form .wpuf-multistep-progressbar.ui-progressbar {
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-progressbar-track {
+  width: 100%;
+  height: 10px;
+  background-color: #E4E4E4;
+  border-radius: 5px;
+  overflow: hidden;
   margin-bottom: 30px;
-  height: 25px;
-  border: 1px solid #eee;
-  position: relative;
 }
-body .wpuf-form .wpuf-multistep-progressbar.ui-progressbar .wpuf-progress-percentage {
-  position: absolute;
-  left: 50%;
-  font-size: 12px;
-  font-weight: bold;
-  top: 20%;
+body .wpuf-form .wpuf-multistep-progressbar .wpuf-progressbar-fill {
+  height: 100%;
+  background-color: #00a0d2;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.3s ease;
 }
 body input.wpuf-btn {
   text-decoration: none !important;

@@ -1015,15 +1015,15 @@ span.pro-icon:hover .wpuf-pro-field-tooltip {
 .wrap h2.with-headway-icon .flex-end .flex-end .headway-icon:hover .HW_badge.HW_softHidden {
   background: #ee62b4 !important;
 }
-.wrap h2.with-headway-icon .flex-end a.canny-link,
-.wrap h2.with-headway-icon .flex-end a.canny-link,
-.wrap h2.with-headway-icon .flex-end a.canny-link {
+.wrap h2.with-headway-icon .flex-end a.feedback-link,
+.wrap h2.with-headway-icon .flex-end a.feedback-link,
+.wrap h2.with-headway-icon .flex-end a.feedback-link {
   font-size: 1rem;
   text-decoration: none;
 }
-.wrap h2.with-headway-icon .flex-end a.canny-link:hover,
-.wrap h2.with-headway-icon .flex-end a.canny-link:hover,
-.wrap h2.with-headway-icon .flex-end a.canny-link:hover {
+.wrap h2.with-headway-icon .flex-end a.feedback-link:hover,
+.wrap h2.with-headway-icon .flex-end a.feedback-link:hover,
+.wrap h2.with-headway-icon .flex-end a.feedback-link:hover {
   text-decoration: underline;
 }
 .wrap h2.with-headway-icon #HW_frame_cont,

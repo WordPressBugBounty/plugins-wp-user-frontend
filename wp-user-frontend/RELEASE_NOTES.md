@@ -1,17 +1,17 @@
 ## Changelog
 
-= v4.3.9 (20 July, 2026) =
-* New – Post Form Gutenberg block to place a frontend post submission form in the block editor with full style controls.
-* New – Change Password tab in the user profile account page so members can update their password from the frontend.
-* New – Redesigned Upgrade to Pro page with a plan comparison and pricing toggle.
-* Enhance – Revamped the payment checkout page with a two column layout, order summary and clearer gateway selection.
-* Enhance – Coupon discount and coupon ID are now stored per transaction and shown in the admin transaction list.
-* Enhance – Show the active Pro plan as a badge in the admin header.
-* Fix – Custom field placeholders in notification emails no longer replace a numeric field value with an attachment URL; only image and file upload fields resolve to URLs.
-* Fix – Coupon discounts now apply to PayPal payments; the discounted amount was previously ignored at checkout.
-* Fix – Resolve a fatal error on PHP 8 when a frontend post form still contains a field from a deactivated module.
-* Fix – Renamed the PayPal webhook query variable so it no longer conflicts with FacetWP and other plugins.
-* Fix – The user registration login form's "Don't have an account?" text is now translatable.
-* Fix – Corrected the Custom HTML field tooltip; WordPress shortcodes require the Shortcode field.
+= v4.3.10 (06 August, 2026) =
+* Enhance – Redesigned all five post form templates with a modern, consistent UI/UX.
+* Enhance – Post form multistep now matches the new registration design, with progress-bar colors driven by form settings.
+* Enhance – Improved readability of the form title, description, help text and field labels on dark templates.
+* Enhance – Modernized the file and image upload progress UI.
+* Fix – Dropdown/multiselect chevrons and the Field Size setting now render consistently across all templates.
+* Fix – Multistep next/previous button spacing no longer overlaps the field focus border.
+* Fix – Improved form label color contrast on Template 4 for better accessibility.
+* Fix – "Use Theme CSS" now correctly disables the plugin's Template 1 styling so your theme's CSS takes over.
+* Fix – Multistep step labels and the progress header are now readable on dark templates (Template 2 and 5).
+* Fix – Checkboxes are now visually distinct from radio buttons on Template 1.
+* Fix – PayPal webhook now fires reliably so subscription and pack transactions are recorded.
+* Dev – The default form skin moved from the generic `.wpuf-style` class to the template-scoped `.wpuf-form-layout1`; update any custom CSS that targeted `.wpuf-style`.
 
 
