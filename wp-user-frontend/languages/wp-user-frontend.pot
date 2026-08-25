@@ -2,9 +2,9 @@
 # This file is distributed under the GPL2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP User Frontend 4.3.10\n"
+"Project-Id-Version: WP User Frontend 4.3.11\n"
 "Report-Msgid-Bugs-To: https://wedevs.com/contact/\n"
-"POT-Creation-Date: 2026-08-06 13:26:10+00:00\n"
+"POT-Creation-Date: 2026-08-25 06:11:07+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1170,7 +1170,7 @@ msgid "Form Pending Message"
 msgstr ""
 
 #: admin/html/form-submission-restriction.php:158
-#: includes/Free/Free_Loader.php:1884 wpuf-functions.php:6247
+#: includes/Free/Free_Loader.php:1885 wpuf-functions.php:6247
 msgid "Form Expired Message"
 msgstr ""
 
@@ -1798,7 +1798,7 @@ msgstr ""
 #: includes/Admin/Forms/Admin_Template.php:592
 #: includes/Admin/Forms/Admin_Template.php:661
 #: includes/Admin/Forms/Admin_Template.php:746
-#: includes/Ajax/Upload_Ajax.php:241
+#: includes/Ajax/Upload_Ajax.php:289
 #: includes/Fields/Form_Field_Cloudflare_Turnstile.php:107
 #: includes/Fields/Form_Field_SectionBreak.php:57
 #: includes/Fields/Form_Field_reCaptcha.php:160
@@ -1824,7 +1824,7 @@ msgstr ""
 
 #: admin/template.php:583 includes/Admin/Admin_Tools.php:562
 #: includes/Admin/Forms/Admin_Template.php:668
-#: includes/Ajax/Upload_Ajax.php:249
+#: includes/Ajax/Upload_Ajax.php:297
 #: includes/Fields/Form_Field_SectionBreak.php:65
 #: includes/Integrations/Elementor/Widget.php:898 wpuf-functions.php:1208
 msgid "Description"
@@ -2236,7 +2236,7 @@ msgstr ""
 msgid "An error occurred while generating options. Please try again."
 msgstr ""
 
-#: includes/AI/RestController.php:926 includes/Free/Free_Loader.php:1290
+#: includes/AI/RestController.php:926 includes/Free/Free_Loader.php:1291
 #: includes/Integrations/WPUF_ACF_Compatibility.php:72
 #: includes/Integrations/WPUF_ACF_Compatibility.php:90
 #: includes/Integrations/WPUF_ACF_Compatibility.php:156
@@ -2600,7 +2600,7 @@ msgstr ""
 #: includes/Admin/Admin_Installer.php:328 includes/Admin/Admin_Tools.php:479
 #: includes/Admin/Admin_Tools.php:1102 includes/Admin/Admin_Tools.php:1130
 #: includes/Integrations/Elementor/Account_Widget.php:770
-#: wpuf-functions.php:6632
+#: wpuf-functions.php:6633
 msgid "Logout"
 msgstr ""
 
@@ -2713,13 +2713,13 @@ msgstr ""
 
 #: includes/Admin/Admin_Subscription.php:537
 #: includes/Admin/Admin_Subscription.php:1229 includes/Free/Form_Element.php:63
-#: includes/Free/Free_Loader.php:1856
+#: includes/Free/Free_Loader.php:1857
 msgid "Enable Post Expiration"
 msgstr ""
 
 #: includes/Admin/Admin_Subscription.php:549
 #: includes/Admin/Admin_Subscription.php:844 includes/Free/Form_Element.php:78
-#: includes/Free/Free_Loader.php:1863
+#: includes/Free/Free_Loader.php:1864
 msgid "Post Expiration Time"
 msgstr ""
 
@@ -2753,21 +2753,21 @@ msgstr ""
 #: includes/Admin/Admin_Subscription.php:677
 #: includes/Admin/Admin_Subscription.php:1267
 #: includes/Admin/Admin_Subscription.php:1383
-#: includes/Free/Free_Loader.php:1871
+#: includes/Free/Free_Loader.php:1872
 msgid "Day(s)"
 msgstr ""
 
 #: includes/Admin/Admin_Subscription.php:678
 #: includes/Admin/Admin_Subscription.php:1268
 #: includes/Admin/Admin_Subscription.php:1384
-#: includes/Free/Free_Loader.php:1872
+#: includes/Free/Free_Loader.php:1873
 msgid "Week(s)"
 msgstr ""
 
 #: includes/Admin/Admin_Subscription.php:679
 #: includes/Admin/Admin_Subscription.php:1269
 #: includes/Admin/Admin_Subscription.php:1385
-#: includes/Free/Free_Loader.php:1873
+#: includes/Free/Free_Loader.php:1874
 msgid "Month(s)"
 msgstr ""
 
@@ -3405,7 +3405,7 @@ msgid "Example"
 msgstr ""
 
 #: includes/Admin/Admin_Tools.php:576 includes/Admin/views/premium.php:277
-#: includes/Free/Free_Loader.php:1941
+#: includes/Free/Free_Loader.php:1942
 msgid "Pro"
 msgstr ""
 
@@ -3605,7 +3605,7 @@ msgstr ""
 #: includes/Admin/Forms/AI_Form_Handler.php:57
 #: includes/Admin/Forms/AI_Form_Handler.php:99
 #: includes/Admin/Forms/AI_Form_Handler.php:142 includes/Admin.php:62
-#: includes/Free/Free_Loader.php:1285
+#: includes/Free/Free_Loader.php:1286
 msgid "Security check failed"
 msgstr ""
 
@@ -5645,16 +5645,16 @@ msgid "Import"
 msgstr ""
 
 #: includes/Admin.php:243 includes/Free/Simple_Login.php:541
-#: includes/Free/Simple_Login.php:582 includes/Frontend/Registration.php:184
-#: includes/Frontend/Registration.php:191
-#: includes/Frontend/Registration.php:198
-#: includes/Frontend/Registration.php:205
-#: includes/Frontend/Registration.php:212
-#: includes/Frontend/Registration.php:219
-#: includes/Frontend/Registration.php:226
-#: includes/Frontend/Registration.php:233
-#: includes/Frontend/Registration.php:240
-#: includes/Frontend/Registration.php:253
+#: includes/Free/Simple_Login.php:582 includes/Frontend/Registration.php:185
+#: includes/Frontend/Registration.php:192
+#: includes/Frontend/Registration.php:199
+#: includes/Frontend/Registration.php:206
+#: includes/Frontend/Registration.php:213
+#: includes/Frontend/Registration.php:220
+#: includes/Frontend/Registration.php:227
+#: includes/Frontend/Registration.php:234
+#: includes/Frontend/Registration.php:241
+#: includes/Frontend/Registration.php:254
 msgid "Error"
 msgstr ""
 
@@ -5774,7 +5774,7 @@ msgstr ""
 msgid "Using %s as shortcode is restricted"
 msgstr ""
 
-#: includes/Ajax/Frontend_Form_Ajax.php:172 wpuf-functions.php:6761
+#: includes/Ajax/Frontend_Form_Ajax.php:172 wpuf-functions.php:6762
 msgid "You must be logged in to edit posts."
 msgstr ""
 
@@ -5782,53 +5782,57 @@ msgstr ""
 msgid "You must be logged in to submit posts."
 msgstr ""
 
-#: includes/Ajax/Frontend_Form_Ajax.php:427 includes/Api/Subscription.php:281
+#: includes/Ajax/Frontend_Form_Ajax.php:201
+msgid "You are not allowed to submit to this form."
+msgstr ""
+
+#: includes/Ajax/Frontend_Form_Ajax.php:453 includes/Api/Subscription.php:281
 #: includes/Api/Subscription.php:311 includes/Api/Subscription.php:385
 msgid "Something went wrong"
 msgstr ""
 
-#: includes/Ajax/Frontend_Form_Ajax.php:499
-#: includes/Ajax/Frontend_Form_Ajax.php:505
+#: includes/Ajax/Frontend_Form_Ajax.php:525
+#: includes/Ajax/Frontend_Form_Ajax.php:531
 msgid ""
 "Thank you for posting on our site. We have sent you an confirmation email. "
 "Please check your inbox!"
 msgstr ""
 
-#: includes/Ajax/Frontend_Form_Ajax.php:720
+#: includes/Ajax/Frontend_Form_Ajax.php:746
 msgid "Invalid email address."
 msgstr ""
 
-#: includes/Ajax/Frontend_Form_Ajax.php:734
+#: includes/Ajax/Frontend_Form_Ajax.php:760
 msgid "You already have an account in our site. Please login to continue."
 msgstr ""
 
-#: includes/Ajax/Frontend_Form_Ajax.php:789
+#: includes/Ajax/Frontend_Form_Ajax.php:815
 #: includes/Frontend_Render_Form.php:280
 #: includes/class-frontend-render-form.php:323
 msgid "You do not have sufficient permissions to access this form."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:245 wpuf-functions.php:1204
+#: includes/Ajax/Upload_Ajax.php:293 wpuf-functions.php:1204
 msgid "Caption"
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:272
+#: includes/Ajax/Upload_Ajax.php:320
 msgid "attach_id is required."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:277
+#: includes/Ajax/Upload_Ajax.php:325
 msgid "attachment not found."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:281
+#: includes/Ajax/Upload_Ajax.php:329
 msgid "You are not allowed to delete this attachment."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:286
+#: includes/Ajax/Upload_Ajax.php:334
 msgid "Attachment deleted successfully."
 msgstr ""
 
-#: includes/Ajax/Upload_Ajax.php:288
+#: includes/Ajax/Upload_Ajax.php:336
 msgid "Could not delete the attachment"
 msgstr ""
 
@@ -6571,11 +6575,11 @@ msgstr ""
 msgid " Learn more about Multistep"
 msgstr ""
 
-#: includes/Free/Form_Element.php:188 includes/Free/Free_Loader.php:1727
+#: includes/Free/Form_Element.php:188 includes/Free/Free_Loader.php:1728
 msgid "Multistep Progressbar Type"
 msgstr ""
 
-#: includes/Free/Form_Element.php:198 includes/Free/Free_Loader.php:1729
+#: includes/Free/Form_Element.php:198 includes/Free/Free_Loader.php:1730
 msgid "Choose how you want the progressbar"
 msgstr ""
 
@@ -6583,7 +6587,7 @@ msgstr ""
 msgid "New post created"
 msgstr ""
 
-#: includes/Free/Form_Element.php:232 includes/Free/Free_Loader.php:1782
+#: includes/Free/Form_Element.php:232 includes/Free/Free_Loader.php:1783
 msgid "A post has been edited"
 msgstr ""
 
@@ -6605,13 +6609,13 @@ msgid "Learn more about Email Notification"
 msgstr ""
 
 #: includes/Free/Form_Element.php:255 includes/Free/Form_Element.php:292
-#: includes/Free/Free_Loader.php:1775 wpuf-functions.php:6103
+#: includes/Free/Free_Loader.php:1776 wpuf-functions.php:6103
 #: wpuf-functions.php:6237
 msgid "To"
 msgstr ""
 
 #: includes/Free/Form_Element.php:262 includes/Free/Form_Element.php:297
-#: includes/Free/Free_Loader.php:1780 wpuf-functions.php:6109
+#: includes/Free/Free_Loader.php:1781 wpuf-functions.php:6109
 msgid "Subject"
 msgstr ""
 
@@ -6678,12 +6682,12 @@ msgid "Conditional Logic"
 msgstr ""
 
 #: includes/Free/Free_Loader.php:157 includes/Free/Free_Loader.php:1152
-#: includes/Free/Free_Loader.php:1903
+#: includes/Free/Free_Loader.php:1904
 msgid "Modules"
 msgstr ""
 
 #: includes/Free/Free_Loader.php:201 includes/Free/Free_Loader.php:202
-#: includes/Free/Free_Loader.php:1634 templates/dashboard/subscription.php:388
+#: includes/Free/Free_Loader.php:1635 templates/dashboard/subscription.php:388
 msgid "Coupons"
 msgstr ""
 
@@ -7203,91 +7207,91 @@ msgstr ""
 msgid "(Upgrade to Pro to unlock)"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1297
+#: includes/Free/Free_Loader.php:1298
 msgid "Invalid module"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1303
+#: includes/Free/Free_Loader.php:1304
 msgid "Module not found"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1318
+#: includes/Free/Free_Loader.php:1319
 msgid "Module activated successfully"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1319
+#: includes/Free/Free_Loader.php:1320
 msgid "Module deactivated successfully"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1482 includes/Free/Free_Loader.php:1483
+#: includes/Free/Free_Loader.php:1483 includes/Free/Free_Loader.php:1484
 msgid "Credit Card"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1506
+#: includes/Free/Free_Loader.php:1507
 msgid "Taxonomy Restriction "
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1524
+#: includes/Free/Free_Loader.php:1525
 msgid "Choose the taxonomy terms you want to enable for this pack:"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1638
+#: includes/Free/Free_Loader.php:1639
 msgid "Use Coupon codes for subscription for discounts."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1642
+#: includes/Free/Free_Loader.php:1643
 msgid "This feature is only available in the Pro Version."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1646
+#: includes/Free/Free_Loader.php:1647
 msgid "Upgrade to Pro Version"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1647
+#: includes/Free/Free_Loader.php:1648
 msgid "Learn more about Coupons"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1666
+#: includes/Free/Free_Loader.php:1667
 msgid "Taxonomy Access"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1667
+#: includes/Free/Free_Loader.php:1668
 msgid "(Control user access to specific taxonomies)"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1716
+#: includes/Free/Free_Loader.php:1717
 msgid "Enable Multi-Step"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1719
+#: includes/Free/Free_Loader.php:1720
 msgid "If checked, form will be displayed in frontend in multiple steps."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1731
+#: includes/Free/Free_Loader.php:1732
 msgid "Progressbar"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1732
+#: includes/Free/Free_Loader.php:1733
 msgid "Step by Step"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1736
+#: includes/Free/Free_Loader.php:1737
 msgid "Active Text Color"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1738
+#: includes/Free/Free_Loader.php:1739
 msgid "Text color for active step."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1742
+#: includes/Free/Free_Loader.php:1743
 msgid "Active Background Color"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1744
+#: includes/Free/Free_Loader.php:1745
 msgid "Background color for progressbar or active step."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1748
+#: includes/Free/Free_Loader.php:1749
 #: includes/Integrations/Elementor/Account_Widget.php:467
 #: includes/Integrations/Elementor/Account_Widget.php:555
 #: includes/Integrations/Elementor/Account_Widget.php:621
@@ -7310,39 +7314,39 @@ msgstr ""
 msgid "Background Color"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1750
+#: includes/Free/Free_Loader.php:1751
 msgid "Background color for normal steps."
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1770
+#: includes/Free/Free_Loader.php:1771
 msgid "Enable Update Post Notification"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1785 wpuf-functions.php:6115
+#: includes/Free/Free_Loader.php:1786 wpuf-functions.php:6115
 msgid "Email Body"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1822
+#: includes/Free/Free_Loader.php:1823
 msgid "Conditional Logic on Submit"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1868
+#: includes/Free/Free_Loader.php:1869
 msgid "Duration Type"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1879
+#: includes/Free/Free_Loader.php:1880
 msgid "Send post expiration email to author"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1881
+#: includes/Free/Free_Loader.php:1882
 msgid "Verification of email addresses will be mandatory"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1927
+#: includes/Free/Free_Loader.php:1928
 msgid "Available in Pro Version"
 msgstr ""
 
-#: includes/Free/Free_Loader.php:1937
+#: includes/Free/Free_Loader.php:1938
 msgid "Bulk Add"
 msgstr ""
 
@@ -7395,11 +7399,11 @@ msgstr ""
 msgid "Cloudflare Turnstile verification failed. Reasons: ["
 msgstr ""
 
-#: includes/Free/Simple_Login.php:554 includes/Frontend/Registration.php:214
+#: includes/Free/Simple_Login.php:554 includes/Frontend/Registration.php:215
 msgid "Username is required."
 msgstr ""
 
-#: includes/Free/Simple_Login.php:560 includes/Frontend/Registration.php:221
+#: includes/Free/Simple_Login.php:560 includes/Frontend/Registration.php:222
 msgid "Password is required."
 msgstr ""
 
@@ -7408,7 +7412,7 @@ msgstr ""
 msgid "Empty reCaptcha Field"
 msgstr ""
 
-#: includes/Free/Simple_Login.php:582 includes/Frontend/Registration.php:255
+#: includes/Free/Simple_Login.php:582 includes/Frontend/Registration.php:256
 msgid "A user could not be found with this email address."
 msgstr ""
 
@@ -7472,7 +7476,7 @@ msgid "[%s] Your username and password info"
 msgstr ""
 
 #: includes/Free/Simple_Login.php:990 includes/Free/Simple_Login.php:1090
-#: includes/Frontend/Registration.php:291 includes/Widgets/Login_Widget.php:157
+#: includes/Frontend/Registration.php:292 includes/Widgets/Login_Widget.php:157
 #. translators: %s: username
 #. translators: %s is the user name
 msgid "Username: %s"
@@ -7810,7 +7814,7 @@ msgstr ""
 msgid "Invalid post"
 msgstr ""
 
-#: includes/Frontend/Frontend_Form.php:74 wpuf-functions.php:6801
+#: includes/Frontend/Frontend_Form.php:74 wpuf-functions.php:6802
 msgid "Your edit access for this post has been locked by an administrator."
 msgstr ""
 
@@ -7818,7 +7822,7 @@ msgstr ""
 msgid "Your allocated time for editing this post has been expired."
 msgstr ""
 
-#: includes/Frontend/Frontend_Form.php:86 wpuf-functions.php:6789
+#: includes/Frontend/Frontend_Form.php:86 wpuf-functions.php:6790
 msgid "Your post edit access has been locked by an administrator."
 msgstr ""
 
@@ -7834,11 +7838,11 @@ msgstr ""
 msgid "I don't know how to edit this post, I don't have the form ID"
 msgstr ""
 
-#: includes/Frontend/Frontend_Form.php:125 wpuf-functions.php:6826
+#: includes/Frontend/Frontend_Form.php:125 wpuf-functions.php:6827
 msgid "You can't edit a post while in pending mode."
 msgstr ""
 
-#: includes/Frontend/Frontend_Form.php:129 wpuf-functions.php:6833
+#: includes/Frontend/Frontend_Form.php:129 wpuf-functions.php:6834
 msgid "You're not allowed to edit this post."
 msgstr ""
 
@@ -7993,52 +7997,52 @@ msgstr ""
 msgid "[%s] Your Payment Invoice"
 msgstr ""
 
-#: includes/Frontend/Registration.php:193
+#: includes/Frontend/Registration.php:194
 msgid "First name is required."
 msgstr ""
 
-#: includes/Frontend/Registration.php:200
+#: includes/Frontend/Registration.php:201
 msgid "Last name is required."
 msgstr ""
 
-#: includes/Frontend/Registration.php:207
+#: includes/Frontend/Registration.php:208
 msgid "Email is required."
 msgstr ""
 
-#: includes/Frontend/Registration.php:228
+#: includes/Frontend/Registration.php:229
 msgid "Confirm Password is required."
 msgstr ""
 
-#: includes/Frontend/Registration.php:235
+#: includes/Frontend/Registration.php:236
 msgid "Passwords are not same."
 msgstr ""
 
-#: includes/Frontend/Registration.php:242
+#: includes/Frontend/Registration.php:243
 msgid "A user with same username already exists."
 msgstr ""
 
-#: includes/Frontend/Registration.php:287
+#: includes/Frontend/Registration.php:288
 #. translators: %s: site name
 msgid "New user registration on your site %s:"
 msgstr ""
 
-#: includes/Frontend/Registration.php:293
+#: includes/Frontend/Registration.php:294
 #. translators: %s: email
 msgid "E-mail: %s"
 msgstr ""
 
-#: includes/Frontend/Registration.php:302
-#: includes/Frontend/Registration.php:317
+#: includes/Frontend/Registration.php:303
+#: includes/Frontend/Registration.php:318
 #. translators: %s %s: site name subject
 msgid "[%1$s] %2$s"
 msgstr ""
 
-#: includes/Frontend/Registration.php:307
+#: includes/Frontend/Registration.php:308
 #. translators: %s: username
 msgid "Hi, %s"
 msgstr ""
 
-#: includes/Frontend/Registration.php:388
+#: includes/Frontend/Registration.php:389
 msgid "Subscription Page settings not set in admin settings"
 msgstr ""
 
@@ -12599,66 +12603,70 @@ msgid "JPEG"
 msgstr ""
 
 #: wpuf-functions.php:6361
-msgid "PNG"
+msgid "JFIF"
 msgstr ""
 
 #: wpuf-functions.php:6362
+msgid "PNG"
+msgstr ""
+
+#: wpuf-functions.php:6363
 msgid "GIF"
 msgstr ""
 
-#: wpuf-functions.php:6507
+#: wpuf-functions.php:6508
 msgid "Layout 1 - Classic"
 msgstr ""
 
-#: wpuf-functions.php:6508
+#: wpuf-functions.php:6509
 msgid "Layout 2 - Modern Dark"
 msgstr ""
 
-#: wpuf-functions.php:6509
+#: wpuf-functions.php:6510
 msgid "Layout 3 - Minimal"
 msgstr ""
 
-#: wpuf-functions.php:6510
+#: wpuf-functions.php:6511
 msgid "Layout 4 - Bordered"
 msgstr ""
 
-#: wpuf-functions.php:6511
+#: wpuf-functions.php:6512
 msgid "Layout 5 - Rounded"
 msgstr ""
 
-#: wpuf-functions.php:6512
+#: wpuf-functions.php:6513
 msgid "Layout 6 - Clean"
 msgstr ""
 
-#: wpuf-functions.php:6513
+#: wpuf-functions.php:6514
 msgid "Layout 7 - Premium"
 msgstr ""
 
-#: wpuf-functions.php:6739
+#: wpuf-functions.php:6740
 msgid "Invalid post ID."
 msgstr ""
 
-#: wpuf-functions.php:6749
+#: wpuf-functions.php:6750
 msgid "Post not found."
 msgstr ""
 
-#: wpuf-functions.php:6768
+#: wpuf-functions.php:6769
 msgid "You are not authorized to edit this post."
 msgstr ""
 
-#: wpuf-functions.php:6779
+#: wpuf-functions.php:6780
 msgid "Post editing is disabled."
 msgstr ""
 
-#: wpuf-functions.php:6814
+#: wpuf-functions.php:6815
 msgid "Your allocated time for editing this post has expired."
 msgstr ""
 
-#: wpuf-functions.php:6848
+#: wpuf-functions.php:6849
 msgid "Your subscription has expired. Please renew to edit posts."
 msgstr ""
 
-#: wpuf-functions.php:6859
+#: wpuf-functions.php:6860
 msgid "You cannot edit this post until payment is completed."
 msgstr ""
 
