@@ -90,7 +90,7 @@
 }
 .slide-fade-enter,
 .slide-fade-leave-active {
-  opacity: .3 !important;
+  opacity: 0.3 !important;
   max-height: 0 !important;
   margin: 0 !important;
 }
@@ -174,7 +174,7 @@
   opacity: 1;
 }
 #toast-container > :hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 .wp-core-ui .button-group.wpuf-flex-button-group {
   position: relative;
@@ -287,7 +287,7 @@
 #wpuf-form-builder-settings .nav-tab-wrapper a {
   width: calc(100% - -1px);
   margin-left: 0;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
   font-weight: 400;
@@ -332,7 +332,7 @@
 #wpuf-form-builder-payment .nav-tab-wrapper a {
   width: calc(100% - -1px);
   margin-left: 0;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
   font-weight: 400;
@@ -510,7 +510,7 @@
   cursor: move;
 }
 #form-preview-stage .field-items .control-buttons i.control-button-disabled {
-  opacity: .3;
+  opacity: 0.3;
   pointer-events: none;
 }
 #form-preview-stage .field-items .control-buttons i:hover {
@@ -568,7 +568,7 @@
   margin-right: 2%;
 }
 .panel-form-field-group .button.button-faded {
-  opacity: .5;
+  opacity: 0.5;
 }
 .button.ui-draggable-dragging {
   margin: 0;
@@ -924,7 +924,7 @@ ul.wpuf-form li .wpuf-password-field:after {
   background: #fff;
 }
 .wpuf-form-template-modal .content ul li:hover .form-create-overlay {
-  animation: weFormsFadeIn .25s;
+  animation: weFormsFadeIn 0.25s;
   padding: 10px;
   text-align: center;
   display: flex;
@@ -1007,7 +1007,7 @@ ul.wpuf-form li .wpuf-password-field:after {
   bottom: 0;
   min-height: 360px;
   background: #000;
-  opacity: .7;
+  opacity: 0.7;
   display: none;
 }
 .wpuf-form-template-modal-backdrop.show {
@@ -1049,7 +1049,7 @@ ul.wpuf-form li .wpuf-password-field:after {
   background: #0085ba;
 }
 .wpuf-toggle-switch.checked:after {
-  left: calc(90%);
+  left: calc(100% - 10px);
   transform: translateX(-100%);
 }
 .wpuf-toggle-switch.big {
@@ -1063,7 +1063,7 @@ ul.wpuf-form li .wpuf-password-field:after {
   height: 15px;
 }
 .wpuf-toggle-switch.big.checked:after {
-  left: calc(95%);
+  left: calc(100% - 5px);
 }
 .wpuf-integrations-wrap:before,
 .wpuf-integrations-wrap:after {

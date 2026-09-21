@@ -151,17 +151,17 @@
         },
         {
             "name": "wedevs/wp-utils",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
+            "version": "v1.1",
+            "version_normalized": "1.1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weDevsOfficial/wp-utils.git",
-                "reference": "e5d072e9ed80b8af8fcd3cb0ca7a8a749568fa5f"
+                "reference": "ac0e390ddb7a26a963161ca50e554f88bc460998"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weDevsOfficial/wp-utils/zipball/e5d072e9ed80b8af8fcd3cb0ca7a8a749568fa5f",
-                "reference": "e5d072e9ed80b8af8fcd3cb0ca7a8a749568fa5f",
+                "url": "https://api.github.com/repos/weDevsOfficial/wp-utils/zipball/ac0e390ddb7a26a963161ca50e554f88bc460998",
+                "reference": "ac0e390ddb7a26a963161ca50e554f88bc460998",
                 "shasum": ""
             },
             "require-dev": {
@@ -171,8 +171,7 @@
                 "tareq1988/wp-php-cs-fixer": "dev-master",
                 "wp-coding-standards/wpcs": "dev-master"
             },
-            "time": "2023-06-06T13:37:32+00:00",
-            "default-branch": true,
+            "time": "2023-06-06T13:28:18+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -200,7 +199,7 @@
             ],
             "support": {
                 "issues": "https://github.com/weDevsOfficial/wp-utils/issues",
-                "source": "https://github.com/weDevsOfficial/wp-utils/tree/main"
+                "source": "https://github.com/weDevsOfficial/wp-utils/tree/v1.1"
             },
             "install-path": "../wedevs/wp-utils"
         }

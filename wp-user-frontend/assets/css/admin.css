@@ -497,7 +497,7 @@ tr.wpuf-form-layouts ul li label {
 }
 tr.wpuf-form-layouts ul li:hover {
   opacity: 0.3;
-  transition: .3s;
+  transition: 0.3s;
 }
 tr.wpuf-form-layouts ul li.active:before {
   position: absolute;
@@ -1057,7 +1057,7 @@ span.pro-icon:hover .wpuf-pro-field-tooltip {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: .2s;
+  transition: 0.2s;
 }
 .wpuf-toggle-switch .slider.round {
   border-radius: 34px;
@@ -1073,7 +1073,7 @@ span.pro-icon:hover .wpuf-pro-field-tooltip {
   left: 3px;
   bottom: 4px;
   background-color: white;
-  transition: .2s;
+  transition: 0.2s;
 }
 @media only screen and (max-width: 1399px) {
   a.wpuf-button.button-upgrade-to-pro {
@@ -1188,7 +1188,7 @@ body.wpuf-modal-open {
     padding: 1rem;
   }
   .wpuf-form-template-modal .wpuf-template-item {
-    width: calc(42%);
+    width: calc(50% - 8px);
   }
 }
 @media (max-width: 480px) {
