@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wedevs/wp-user-frontend',
-        'pretty_version' => 'v4.3.12',
-        'version' => '4.3.12.0',
-        'reference' => '756e3988e3b5ab7aa10a9e9252bdf89e468ec8de',
+        'pretty_version' => 'v4.3.13',
+        'version' => '4.3.13.0',
+        'reference' => '1f7ae25de555b47752cf7fec531bf180afb75e9c',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,9 +22,9 @@
             'dev_requirement' => false,
         ),
         'wedevs/wp-user-frontend' => array(
-            'pretty_version' => 'v4.3.12',
-            'version' => '4.3.12.0',
-            'reference' => '756e3988e3b5ab7aa10a9e9252bdf89e468ec8de',
+            'pretty_version' => 'v4.3.13',
+            'version' => '4.3.13.0',
+            'reference' => '1f7ae25de555b47752cf7fec531bf180afb75e9c',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
